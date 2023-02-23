@@ -2,39 +2,30 @@
 #include "main.h"
 
 /**
- * main - Prints a fizz buzz program
+ * main - Enrty
  *
- * Return: Always 0
-*/
-
+ * Description: prints the numbers 1 - 100 w/
+ * Fizz for multiples of 3, Bizz for multiple of 5,
+ * and FizzBizz for multiple of both
+ *
+ * Return: always 0
+ */
 int main(void)
-
 {
+	int i;
 
-	int x;
-
-	for (x = 1; x <= 100; x++)
+	for (i = 0; i <= 100; i++)
 	{
-	if ((x % 3 == 0) && (x % 5 == 0))
-	{
-	printf("FizzBuzz");
-	}
-	else if (x % 3 == 0)
-	{
-	printf("Fizz");
-	}
-	else if (x % 5 == 0)
-	{
-	printf("Buzz");
-	}
-	else
-	{
-	printf("%d", x)
-	}
-	if (x != 100)
-	{
-	printf(" ");
-	}
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Bizz");
+		else
+			printf("%i", i);
+		if (i < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
