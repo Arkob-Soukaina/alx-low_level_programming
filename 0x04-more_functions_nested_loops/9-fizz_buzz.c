@@ -2,16 +2,15 @@
 #include "main.h"
 
 /**
- * main - Enrty
+ * main - Prints a fizz buzz program
  *
- * Description: prints the numbers 1 - 100 w/
- * Fizz for multiples of 3, Bizz for multiple of 5,
- * and FizzBizz for multiple of both
- *
- * Return: always 0
- */
+ * Return: Always 0
+*/
+
 int main(void)
+
 {
+
 	int x;
 
 	for (x = 1; x <= 100; x++)
